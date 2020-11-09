@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/visual-bits",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Visual Bits`,
+    description: `Learn bits programming and bitwise operations by visually seeing each bit as they change`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -18,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `visual-bits`,
+        short_name: `visual-bis`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
