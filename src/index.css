@@ -55,7 +55,7 @@ code {
 }
 
 .dec-bin-row {
-  margin: 35px 0;
+  margin: 35px 0 0;
   padding: 25px 0;
 }
 
@@ -78,6 +78,29 @@ code {
   display: flex;
   justify-content: flex-end;
   margin-top: 15px;
+}
+.logic-card {
+  margin: 35px 0;
+  padding: 15px 0;
+}
+.logic-card .title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.logic-card th {
+  color: var(--theme-color);
+}
+
+.footer {
+  background: var(--theme-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px;
 }
 
 @media (max-width: 600px) {

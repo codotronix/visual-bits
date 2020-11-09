@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from './routes'
-import { Header } from './components/layout'
+import { Header, Footer } from './components/layout'
 
 function App() {
   return (
@@ -19,6 +19,10 @@ function App() {
           </Switch>
         </Router>
       </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

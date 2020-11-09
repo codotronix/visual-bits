@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 
 const DecBinRow = props => {
     const { name, dec, onChange } = props
@@ -13,7 +12,7 @@ const DecBinRow = props => {
 
         else if(newDec < 0 || newDec > 255) return alert('The decimal number must be in the range 0 <= n <= 255')
 
-        else onChange && onChange(newDec)
+        else onChange(newDec)
     }
 
     /**
@@ -30,7 +29,7 @@ const DecBinRow = props => {
         bin = bin.join('')
 
         const newDec = parseInt(bin, 2)
-        onChange && onChange(newDec)
+        onChange(newDec)
     }
 
     /**
@@ -39,7 +38,7 @@ const DecBinRow = props => {
      */
     const handleShift = direction => {
         const newDec = direction === 'LEFT' ? dec << 1 : dec >> 1
-        onChange && onChange(newDec)
+        onChange(newDec)
     }
 
     /**
@@ -80,7 +79,7 @@ const DecBinRow = props => {
                 }
                 
             </div>
-            <div className={clsx("col-sm-12 btn-panel", !onChange && 'd-none')}>
+            <div className="col-sm-12 btn-panel">
                 <button 
                     type="button" 
                     className="btn btn-primary" 
